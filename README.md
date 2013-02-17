@@ -1,0 +1,4 @@
+kangoweather
+============
+
+experimental kango extension
