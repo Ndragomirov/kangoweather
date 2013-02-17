@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Domine:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+
+<div style="display: none">
+
+    <!--header template-->
+    <h2 data-tmpl-name="geo" class="weather-geo">
+        {{city}}, {{countryName}}
+    </h2>
+
+    <!--weather template-->
+    <div data-tmpl-name="weather" class="weather-item">
+        <img class="preview" src="{{img}}">
+        <span class="info">
+            <span class="day">{{day}} </span>
+            <span class="condition">{{condition}}</span>
+        </span>
+        <span class="temp">{{tempMinC}}&deg; / {{tempMaxC}}&deg; C</span>
+    </div>
+</div>
+
+<div id="wrapper">
+    <div id="header"></div>
+    <div id="container"></div>
+</div>
+
+
+<script type="text/javascript" src="../kango-ui/kango_api.js"></script>
+<script type="text/javascript" src="popup.js"></script>
+</body>
+</html>

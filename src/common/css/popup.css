@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 280px;
+    height: 240px;
+}
+
+body {
+    /*font-family: Arial, sans-serif;*/
+    font-family: 'Domine', sans-serif;
+    font-size: 14px;
+}
+
+#wrapper {
+    padding: 10px;
+}
+
+.preview {
+    width: 48px;
+    vertical-align: middle;
+}
+
+.weather-item {
+    margin-top: 5px;
+    width: 260px;
+}
+
+.info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.info span {
+    display: block;
+}
+
+.info .day {
+    font-weight: bold;
+}
+
+.info .condition {
+    color: rgb(153, 153, 153);
+}
+
+.temp {
+    float: right;
+    font-size: 16px;
+    color: rgb(25, 142, 197);
+    font-weight: bold;
+}

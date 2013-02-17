@@ -1,0 +1,21 @@
+{
+    "content_scripts"   : [],
+    "description"       : "Extension description",
+    "creator"           : "KangoExtensions",
+    "background_scripts": [
+        "main.js"
+    ],
+    "homepage_url"      : "http://kangoextensions.com/",
+    "version"           : "1.0",
+    "browser_button"    : {
+        "tooltipText": "Popup Demo",
+        "caption"    : "Popup Demo",
+        "icon"       : "icons/button.png",
+        "popup"      : {
+            "url"   : "html/popup.html",
+            "width" : 280,
+            "height": 280
+        }
+    },
+    "name"              : "kango-weather"
+}
