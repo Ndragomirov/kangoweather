@@ -2,6 +2,8 @@
 
 app.xhr = kango.xhr;
 
+app.updateInterval = 1000 * 60 * 60;
+
 //app.log = kango.console.log;
 
 app.noop = function noop() {
@@ -29,12 +31,18 @@ app.init = function () {
     app.getUserInfo( function ( err, data ) {
         if ( err ) return err;
         app.data.geolocation = data;
-//        app.log( data );
         app.updateWeatherInfo( app.data.geolocation.host, function ( err, data ) {
             if ( err ) return err;
             app.data.weather = data;
         } );
     } );
+
+    setInterval( function () {
+        app.updateWeatherInfo( app.data.geolocation.host, function ( err, data ) {
+            if ( err ) return err;
+            app.data.weather = data;
+        } );
+    }, app.updateInterval );
 };
 
 app.data = {};
