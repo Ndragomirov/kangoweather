@@ -1,15 +1,15 @@
 {
     "content_scripts"   : [],
-    "description"       : "Extension description",
-    "creator"           : "KangoExtensions",
+    "description"       : "Kango weather",
+    "creator"           : "Kango weather",
     "background_scripts": [
         "main.js"
     ],
     "homepage_url"      : "http://kangoextensions.com/",
     "version"           : "1.0",
     "browser_button"    : {
-        "tooltipText": "Popup Demo",
-        "caption"    : "Popup Demo",
+        "tooltipText": "Kango weather",
+        "caption"    : "Kango weather",
         "icon"       : "icons/button.png",
         "popup"      : {
             "url"   : "html/popup.html",
@@ -17,5 +17,5 @@
             "height": 280
         }
     },
-    "name"              : "kango-weather"
+    "name"              : "Kango weather"
 }
